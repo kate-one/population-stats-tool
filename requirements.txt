@@ -10,3 +10,4 @@ sdmx==0.2.10
 six==1.10.0
 urllib3==1.21.1
 matplotlib==2.1.0
+xlrd==1.1.0
