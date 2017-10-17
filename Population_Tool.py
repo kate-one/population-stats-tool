@@ -37,7 +37,7 @@ def ReadPopulationAgeData(path, skiprows=16):
 def GetValidCountry(dataset):
     valid_country = False
     while valid_country == False:
-        country = input('Enter a country name:')
+        country = input('Enter a country name (in proper case, e.g. Nigeria):')
         if country == 'quit':
             quit()
         elif country in dataset['Region, subregion, country or area *'].unique():
@@ -52,7 +52,7 @@ def GetValidCountry(dataset):
 def GetValidYear(dataset, check_field='Year'):
     valid_year = False
     while valid_year == False:
-        year = int(input('Enter a projection year:'))
+        year = int(input('Enter a projection year (e.g. 2040):'))
         if year == 'quit':
             quit()
         elif year in dataset[check_field].unique():
@@ -67,7 +67,7 @@ def GetValidYear(dataset, check_field='Year'):
 def GetValidAgeCohort(dataset, check_field='Age Cohort'):
     valid_cohort = False
     while valid_cohort == False:
-        cohort = str(input('Enter an age cohort:'))
+        cohort = str(input('Enter an age cohort (e.g. 10-14):'))
         if cohort == 'quit':
             quit()
         elif cohort in dataset[check_field].unique():
@@ -75,7 +75,7 @@ def GetValidAgeCohort(dataset, check_field='Age Cohort'):
             print('Thanks. {} is in the dataset.'.format(cohort))
         else:
             print('Sorry, {} is not in dataset. Please try again. Valid values:'.format(cohort))
-            print(test[check_field].unique())
+            print(dataset[check_field].unique())
 
     return cohort
 
