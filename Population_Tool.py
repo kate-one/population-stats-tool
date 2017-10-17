@@ -4,7 +4,7 @@ import matplotlib
 matplotlib.style.use('ggplot')
 
 POP_DATA_PATH = 'https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx'
-POP_RELATEABLE_PATH = ''
+POP_RELATEABLE_PATH = 'https://raw.githubusercontent.com/ONEcampaign/humanitarian-data-service/master/resources/data/derived/example/2017_relatable_population_rankings.csv'
 POP_AGE_DATA_PATH = 'https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F07_1_POPULATION_BY_AGE_BOTH_SEXES.xlsx'
 
 

@@ -104,3 +104,5 @@ ENV/
 .idea/
 .kyso
 study.json
+
+/local_data
